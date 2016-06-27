@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<h1>my page</h1>
+	<p>мої улюблені сайти:
+		<a href="http://" >google</a> 
+		<a href="http://" >design.ru</a> 
+		<a href="http://" >demiart</a>
+	</p>
+	<div>
+		За допомогою JavaScript запропонувати користувачу вибрати стиль для сторінки. А саме:
+		<ul>
+			<li>фон для сторінки</li>
+			<li>тип шпифта на сторінці</li>
+			<li>вирівнювання для заголовка h1</li>
+			<li>фон для параграфа зі зсилками</li>
+			<li>колір тексту у параграфі зі зсилками і для самих зсилок. При чому колір тексту для зсилок призначити у циклі</li>
+			<li>колір, розмір, товщину тексту у елементі div</li>
+			<li>тип маркера для маркованого списку на сторінці</li>
+		</ul>
+		Таким чином слід запропонувати користувачу ввести десять налаштувань сторінки і застосувати їх.<br/>
+		ДОДАТОК ДО ЗАВДАННЯ: замість зсилок на конкретні сайти, вивести у панелі навігації зсилки на три сайти, які вкаже користувач. <br/>
+		Наприклад користувач у віконце prompt() ввів адресу yandex.ru - в такому разі треба створити зсилку, яка вела б на сайт Яндекса, а текстом цієї зсилки (тим, по чому можна клікнути) буде також yandex.ru
+	</div>
+   
+<p>lol</p>
+    <script>
+        var background = prompt('фон');
+        var font = prompt('шрифт');
+        var align = prompt('вирівнювання h1');
+        var fon = prompt('фон параграфа');
+        var color = prompt('link color');
+        var div = prompt('color div');
+        var div1 = prompt('size div');
+        var div2 = prompt('font-weight div');
+        var liststyle = prompt('list');
+        var setlink1 = prompt('setlink1');
+        var setlink2 = prompt('setlink2');
+        var setlink3 = prompt('setlink3');
+            
+            document.body.style.background= background;
+            document.body.style.fontFamily= font;
+            document.body.firstElementChild.style.textAlign= align;
+            document.body.children[1].style.background= fon;
+
+            var child = document.getElementsByTagName("a");
+
+            for(var i = 0; i<child.length;i++ ){
+                child[i].style.color= color;
+            }
+            document.body.children[2].style.color= div;
+            document.body.children[2].style.fontSize= div1;
+            document.body.children[2].style.fontWeight= div2;
+            document.body.children[2].children[0].style.listStyleType= liststyle;
+        document.body.children[1].children[0].innerHTML = setlink1;
+        document.body.children[1].children[0].href ='http://' + setlink1;
+        document.body.children[1].children[0].target = '_blank';
+        document.body.children[1].children[1].innerHTML = setlink2;
+        document.body.children[1].children[1].href ='http://' + setlink2;
+        document.body.children[1].children[1].target = '_blank';
+        document.body.children[1].children[2].innerHTML = setlink3;
+        document.body.children[1].children[2].href ='              ://' + setlink3;
+        document.body.children[1].children[2].target = '_blank';
+    </script>
+    
+</body>
+</html>
