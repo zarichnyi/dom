@@ -1,4 +1,4 @@
-window.onclick = function (){
+document.getElementById('btn').onclick = function (){
 var background = prompt('фон');
         var font = prompt('шрифт');
 var align = prompt('вирівнювання h1');
