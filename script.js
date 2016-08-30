@@ -1,15 +1,4 @@
- var background = prompt('фон');
-        var font = prompt('шрифт');
-        var align = prompt('вирівнювання h1');
-        var fon = prompt('фон параграфа');
-        var color = prompt('link color');
-        var div = prompt('color div');
-        var div1 = prompt('size div');
-        var div2 = prompt('font-weight div');
-        var liststyle = prompt('list');
-        var setlink1 = prompt('setlink1');
-        var setlink2 = prompt('setlink2');
-        var setlink3 = prompt('setlink3');
+ 
             
             document.body.style.background= background;
             document.body.style.fontFamily= font;
@@ -34,3 +23,16 @@
         document.body.children[1].children[2].innerHTML = setlink3;
         document.body.children[1].children[2].href ='http://' + setlink3;
         document.body.children[1].children[2].target = '_blank';
+
+var background = prompt('фон');
+        var font = prompt('шрифт');
+var align = prompt('вирівнювання h1');
+var fon = prompt('фон параграфа');
+var color = prompt('link color');
+var div = prompt('color div');
+var div1 = prompt('size div');
+var div2 = prompt('font-weight div');
+var liststyle = prompt('list');
+var setlink1 = prompt('setlink1');
+var setlink2 = prompt('setlink2');
+var setlink3 = prompt('setlink3');
