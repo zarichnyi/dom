@@ -1,17 +1,17 @@
 document.getElementById('btn').onclick = function (){
-var background = prompt('фон');
+ background = prompt('фон');
         var font = prompt('шрифт');
-var align = prompt('вирівнювання h1');
-var fon = prompt('фон параграфа');
-var color = prompt('link color');
-var div = prompt('color div');
-var div1 = prompt('size div');
-var div2 = prompt('font-weight div');
-var liststyle = prompt('list');
-var setlink1 = prompt('setlink1');
-var setlink2 = prompt('setlink2');
-var setlink3 = prompt('setlink3');
-}
+ align = prompt('вирівнювання h1');
+ fon = prompt('фон параграфа');
+ color = prompt('link color');
+ div = prompt('color div');
+ div1 = prompt('size div');
+ div2 = prompt('font-weight div');
+ liststyle = prompt('list');
+ setlink1 = prompt('setlink1');
+ setlink2 = prompt('setlink2');
+ setlink3 = prompt('setlink3');
+
             document.body.style.background = background;
             document.body.style.fontFamily = font;
             document.body.firstElementChild.style.textAlign = align;
@@ -35,3 +35,4 @@ var setlink3 = prompt('setlink3');
         document.body.children[1].children[2].innerHTML = setlink3;
         document.body.children[1].children[2].href ='http://' + setlink3;
         document.body.children[1].children[2].target = '_blank';
+}
